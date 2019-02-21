@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .normalContent{
+        width:100%;
+        height:70vh;
+        background-size:50% 100%;
+        background-image:url("monkey.png");
+      }
+      .fixedPara{
+        position:fixed;
+        background-image: url("banana.png");
+        background-size: 20% 33%;
+        opacity: 0.4;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixedPara">
+
+    </div>
+    <div class="normalContent">
+    asdasdasdasddasdsad
+    </div>
+    <div class="normalContent">
+    asdasdasdasddasdsad
+    </div>
+    <div class="normalContent">
+    asdasdasdasddasdsad
+    </div>
+    <div class="normalContent">
+    asdasdasdasddasdsad
+    </div>
+    <div class="normalContent">
+    asdasdasdasddasdsad
+    </div>
+
+    <script type="text/javascript">
+      var fixedPara = document.getElementsByClassName('fixedPara')[0];
+      window.onscroll = function(){
+        fixedPara.style.top = '-' + window.scrollY/2 + "px";
+      }
+    </script>
+  </body>
+</html>
